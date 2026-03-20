@@ -1,5 +1,6 @@
 {
   "version": 2,
   "buildCommand": "cd github-nhw4u82k && npm install && npm run build",
-  "outputDirectory": "github-nhw4u82k/dist"
+  "outputDirectory": "github-nhw4u82k/dist",
+  "installCommand": "echo 'skip'"
 }
