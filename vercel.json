@@ -1,4 +1,5 @@
 {
   "version": 2,
-  "root": "github-nhw4u82k"
+  "buildCommand": "cd github-nhw4u82k && npm install && npm run build",
+  "outputDirectory": "github-nhw4u82k/dist"
 }
