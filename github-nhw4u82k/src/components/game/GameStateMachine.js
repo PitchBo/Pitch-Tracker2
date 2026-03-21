@@ -367,10 +367,11 @@ export function processEvent(event, game, outing, payload = {}) {
       updateHandednessCounts(o, g.batterHand, true);
 
       o.battersFaced++;
-      o.atBats++;
-      o.outsRecorded++;
-      if (o.firstPitchWasStrike) o.firstPitchStrikes++;
-      if (g.balls >= 3) o.threeBallCounts++;
+o.atBats++;
+o.outsRecorded++;
+o.ballsInPlay++;
+if (o.firstPitchWasStrike || o.isFirstPitchOfAtBat) o.firstPitchStrikes++;
+if (g.balls >= 3) o.threeBallCounts++;
 
       g.outs++;
 
